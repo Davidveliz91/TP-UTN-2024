@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(43, 39, 39);
+}
+
+header {
+    background-color: rgb(54, 100, 54);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+section {
+    padding: 30px;
+    height: 80vh;
+}
+
+#banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+}
+
+.banner-text p {
+    font-size: 20px;
+    width: 60%;
+}
+
+#categories {
+    text-align: center;
+}
+
+#categories h2 {
+    font-size: 40px;
+    color: white;
+}
+
+#categories p {
+    color: white;
+}
+
+#categories .container-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid: 10px;
+    padding: 20px;
+    height: 80%;
+}
+
+#categories .card {
+    padding: 100px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(129, 80, 20);
+    height: 90%;
+    width: 40%;
+   margin: auto;
+    align-items: center;
+}
+#products {
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3 1fr) 300px; 
+}
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#products .card {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+#products .card img {
+    width: 100%;
+    height: auto;
+}
