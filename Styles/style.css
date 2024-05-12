@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
@@ -8,9 +9,7 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(43, 39, 39);
-
 }
 
 header {
@@ -29,6 +28,7 @@ header nav ul {
     list-style: none;
     color: black;
 }
+
 header a {
     text-decoration: none;
     padding: 5px;
@@ -51,7 +51,9 @@ section {
     height: 400px;
     max-width: 100%;
     color: white;
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner-text h1 {
@@ -84,8 +86,9 @@ section {
     height: 80%;
 }
 
-#categories .card {
-    /*padding: 100px;*/
+#categories .card1,
+.card2,
+.card3 {
     border: none;
     border-radius: 10px;
     color: white;
@@ -93,9 +96,26 @@ section {
     height: 400px;
     width: 300px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 100%;
+}
+
+#categories .card1 {
+    background-image: url(../Assets/proteinasfondo.jpg);
+    background-size: cover;
+}
+
+#categories .card2 {
+    background-image: url(../Assets/creatinasfondo.jpg);
+    background-size: cover;
+}
+
+#categories .card3 {
+    background-image: url(../Assets/otrosfondo.jpg);
+    background-size: cover;
 }
 
 #products {
@@ -120,7 +140,7 @@ section {
     width: 280px;
     text-align: center;
     margin: 15px;
-    border: 2px solid var(--color-primary);
+    border: 5px solid var(--color-primary);
     height: 280px;
     border-radius: 10px;
     justify-content: center;
@@ -136,24 +156,29 @@ section {
     text-align: center;
     align-items: center;
     font-size: 20px;
+    margin: 10px 0 10px;
 }
 
 #products .card p {
     color: white;
     text-align: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
+    margin: 10px 0 10px;
 }
 
 #products .card a {
-    color: var(--color-primary);
+    color: white;
     text-align: center;
     align-items: center;
+    text-decoration: none;
+    padding: 10px;
 }
 
 #products .card a:hover {
-    color: white;
+    color: black;
 }
+
 
 #contact {
     margin-top: 150px;
@@ -173,8 +198,16 @@ form * {
     outline: none;
     border-radius: 5px;
 }
-form label{
-color: white;
+
+form label {
+    color: white;
+    padding: 0;
+}
+form input {
+    height: 30px;
+}
+form textarea {
+    height: 100px;
 }
 
 button {
@@ -184,6 +217,13 @@ button {
     padding: 10px;
     width: 100px;
     align-items: center;
+}
+button a {
+    color: white;
+}
+
+button a:hover{
+ color: black;
 }
 
 form {
