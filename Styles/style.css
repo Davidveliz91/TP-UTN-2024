@@ -17,9 +17,11 @@
     box-shadow: 2px 2px 3px #999;
     z-index: 999;
 }
-.fa-whatsapp{
+
+.fa-whatsapp {
     font-size: 50px;
 }
+
 .float:hover {
     color: #33fa7c;
 }
@@ -30,6 +32,7 @@
 
 body {
     background-color: rgb(43, 39, 39);
+    overflow-x: hidden;
 }
 
 header {
@@ -58,7 +61,9 @@ header a {
 a:hover {
     color: grey;
 }
-
+main {
+    margin-bottom: 100px;
+}
 section {
     padding: 30px;
     height: 80vh;
@@ -85,13 +90,15 @@ section {
     width: 50%;
 }
 
-#categories {
+h2 {
+    color: white;
     text-align: center;
+    font-size: 30px;
+    margin: 20px;
 }
 
-#categories h2 {
-    font-size: 30px;
-    color: white;
+#categories {
+    height: auto;
 }
 
 #categories p {
@@ -101,14 +108,13 @@ section {
 #categories .container-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid: 10px;
     padding: 20px;
-    height: 80%;
 }
 
 #categories .card1,
 .card2,
 .card3 {
+    text-align: center;
     border: none;
     border-radius: 10px;
     color: white;
@@ -139,34 +145,27 @@ section {
 }
 
 #products {
-    max-height: 500px;
-    margin-bottom: 200px;
-}
-
-#products h2 {
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    margin: 20px;
+    height: auto;
 }
 
 .container-products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
+    padding: 20px;
 }
 
 #products .card {
+    justify-self: center;
     width: 280px;
     text-align: center;
     margin: 15px;
     border: 5px solid var(--color-primary);
     height: 280px;
     border-radius: 10px;
-    justify-content: center;
 }
 
 #products .card img {
+    margin-top: 10px;
     width: 50%;
     height: 50%;
 }
@@ -201,13 +200,7 @@ section {
 
 
 #contact {
-    margin-top: 150px;
-}
-
-#contact h3 {
-    font-size: 30px;
-    color: white;
-    text-align: center;
+    padding: 20px;
 }
 
 form * {
@@ -223,9 +216,11 @@ form label {
     color: white;
     padding: 0;
 }
+
 form input {
     height: 30px;
 }
+
 form textarea {
     height: 100px;
 }
@@ -238,12 +233,13 @@ button {
     width: 100px;
     align-items: center;
 }
+
 button a {
     color: white;
 }
 
-button a:hover{
- color: black;
+button a:hover {
+    color: black;
 }
 
 form {
@@ -269,6 +265,7 @@ footer h4 {
     font-size: 20px;
     margin: 0px 35px;
 }
+
 footer li {
     margin: 10px 10px 10px 15px;
 }
@@ -278,6 +275,7 @@ footer li a {
     text-decoration: none;
     margin: 2px;
 }
+
 footer li i {
     margin: 2px;
 }
