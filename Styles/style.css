@@ -252,7 +252,32 @@ form {
     margin: auto;
 }
 
+.separator {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid var(--color-primary);
+    margin-top: -13.9vw;
+}
+
 footer {
-    height: 100px;
+    height: 120px;
     background-color: var(--color-primary);
+}
+
+footer h4 {
+    font-size: 20px;
+    margin: 0px 35px;
+}
+footer li {
+    margin: 10px 10px 10px 15px;
+}
+
+footer li a {
+    color: black;
+    text-decoration: none;
+    margin: 2px;
+}
+footer li i {
+    margin: 2px;
 }
