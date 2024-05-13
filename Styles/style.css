@@ -234,11 +234,11 @@ button {
     align-items: center;
 }
 
-button a {
+button {
     color: white;
 }
 
-button a:hover {
+button:hover {
     color: black;
 }
 
